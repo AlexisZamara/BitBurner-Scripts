@@ -14,6 +14,7 @@ const hwgwCoordinator = "scripts/batching/coordinator.js";
 
 export async function main(_ns) {
 	ns = _ns;
+	sessionStorage.clear();
 
 	// nuke every server and propagate remote files
 	const ports = countExes();
@@ -25,6 +26,8 @@ export async function main(_ns) {
 	ns.run("/scripts/infiltration/auto-solve.js");
 	ns.run("/scripts/utils/server-ranking.js");
 	await autoStart(ownedServers);
+	ns.run("/scripts/auto/server-manager.js");
+	ns.run("/scripts/auto/hacknet-manager.js");
 }
 
 function countExes() {
