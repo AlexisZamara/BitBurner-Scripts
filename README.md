@@ -23,18 +23,18 @@ These are the self-imposed rules that I refer to when creating new scripts for m
 
 
 # Current Goals:
-- [ ] Automated server purchasing and upgrading
-- [ ] Automated hacknet node purchasing and upgrading
+- [x] Automated server purchasing and upgrading
+- [x] Automated hacknet node purchasing and upgrading
+- [ ] Automated augmentation purchase
 - [ ] Automated darkweb purchases
-- [ ] Implement [BB-Vue](https://github.com/smolgumball/bb-vue)
 - [ ] Automated crime
 - [x] Automated infiltrations
 - [ ] Automated infiltration rewards
 - [ ] Automated stock trading
-- [ ] Eat some noodles
 - [x] Basic HWGW batch thing
 - [x] Automated GW of unmaxed servers
-- [ ] Automated augmentation purchase
 - [ ] Automated job/gym/university/faction
 - [ ] Automated backdooring
 - [ ] Automated programming
+- [ ] Eat some noodles
+- [ ] Implement [BB-Vue](https://github.com/smolgumball/bb-vue)
