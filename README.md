@@ -23,7 +23,6 @@ These are the self-imposed rules that I refer to when creating new scripts for m
 
 
 # Current Goals:
-- 
 - [ ] Automated server purchasing and upgrading
 - [ ] Automated hacknet node purchasing and upgrading
 - [ ] Automated darkweb purchases
