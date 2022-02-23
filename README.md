@@ -27,7 +27,7 @@ These are the self-imposed rules that I refer to when creating new scripts for m
 - [x] Automated hacknet node purchasing and upgrading
 - [ ] Automated augmentation purchase
 - [ ] Automated darkweb purchases
-- [ ] Automated crime
+- [x] Automated crime
 - [x] Automated infiltrations
 - [ ] Automated infiltration rewards
 - [x] Automated stock trading
