@@ -30,7 +30,7 @@ These are the self-imposed rules that I refer to when creating new scripts for m
 - [ ] Automated crime
 - [x] Automated infiltrations
 - [ ] Automated infiltration rewards
-- [ ] Automated stock trading
+- [x] Automated stock trading
 - [x] Basic HWGW batch thing
 - [x] Automated GW of unmaxed servers
 - [ ] Automated job/gym/university/faction
