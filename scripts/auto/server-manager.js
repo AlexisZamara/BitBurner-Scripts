@@ -11,7 +11,7 @@ export async function main(_ns) {
 	let cooldown = 100000;
 	
 	while(true) {
-		let moneyAvailable = await ns.getServerMoneyAvailable(home);
+		let moneyAvailable = (await ns.getServerMoneyAvailable(home)) * 0.3;
 		let serverRamLimit = await ns.getPurchasedServerMaxRam();
 		let maxCost = Number.MAX_SAFE_INTEGER;
 		let cheapestUpgrade;

@@ -8,7 +8,7 @@ export async function main(ns) {
 		let node;
 		const totalNodes = await ns.hacknet.numNodes();
 
-		let moneyAvailable = await ns.getServerMoneyAvailable(home);
+		let moneyAvailable = (await ns.getServerMoneyAvailable(home)) * 0.3;
 		let maxCost = Number.MAX_SAFE_INTEGER;
 		let cheapestPart;
 		let buyNextNode = false;
