@@ -29,12 +29,19 @@ These are the self-imposed rules that I refer to when creating new scripts for m
 - [ ] Automated darkweb purchases
 - [x] Automated crime
 - [x] Automated infiltrations
-- [ ] Automated infiltration rewards
+- [x] Automated infiltration rewards
 - [x] Automated stock trading
 - [x] Basic HWGW batch thing
 - [x] Automated GW of unmaxed servers
 - [ ] Automated job/gym/university/faction
-- [ ] Automated backdooring
+- [x] Automated backdooring
 - [ ] Automated programming
-- [ ] Eat some noodles
+- [x] Eat some noodles
+- [x] Click on some illegal stuff
+- [ ] Figure out the other exploits
 - [ ] Implement [BB-Vue](https://github.com/smolgumball/bb-vue)
+
+# Known Issues:
+- Noodles devourer causes lag due to toasts.
+- Automated infiltration does not consistently trigger onSuccess(), work on a solving algorithm has started
+- HWGW batcher does not dispatch target servers
