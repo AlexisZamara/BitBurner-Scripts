@@ -23,11 +23,13 @@ export async function main(_ns) {
 	 	await autoNuke(ports,s);
 	}
 	const ownedServers = ns.getPurchasedServers();
-	ns.run("/scripts/infiltration/auto-solve.js");
+	//ns.run("/scripts/infiltration/auto-solve.js"); no longer in use
 	ns.run("/scripts/utils/server-ranking.js");
+	ns.run("/scripts/auto/auto-crime.js");
 	await autoStart(ownedServers);
 	ns.run("/scripts/auto/server-manager.js");
 	ns.run("/scripts/auto/hacknet-manager.js");
+	ns.run("/scripts/auto/stonks.js");
 }
 
 function countExes() {
