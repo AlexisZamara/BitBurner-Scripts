@@ -32,6 +32,7 @@ These are the self-imposed rules that I refer to when creating new scripts for m
 - [x] Automated infiltration rewards
 - [x] Automated stock trading
 - [x] Basic HWGW batch thing
+- [ ] Improved HWGW batcher
 - [x] Automated GW of unmaxed servers
 - [ ] Automated job/gym/university/faction
 - [x] Automated backdooring
@@ -44,4 +45,3 @@ These are the self-imposed rules that I refer to when creating new scripts for m
 # Known Issues:
 - Noodles devourer causes lag due to toasts.
 - Automated infiltration does not consistently trigger onSuccess(), work on a solving algorithm has started
-- HWGW batcher does not dispatch target servers
