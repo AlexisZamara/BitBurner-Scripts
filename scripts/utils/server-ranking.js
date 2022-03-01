@@ -40,7 +40,7 @@ export async function main(_ns) {
 		cd = 1000;
 
 		for(let s of servers) {
-			if(ns.getServerRequiredHackingLevel(s.serverName) > pLevel || !s.isAdmin) continue;
+			if(!s.isAdmin) continue;
 			if(s.maxMoney > ns.getServerMoneyAvailable(s.serverName)) continue;
 
 			// 1 + (weight * Math.pow(intelligence, 0.8)) / 600; 
@@ -81,14 +81,13 @@ export async function main(_ns) {
 			let minRam = 9999999999;
 			let pick;
 			for(let worker of workers) {
-				if(!!sessionStorage.getItem(worker) && JSON.parse(sessionStorage.getItem(worker)).pLevel > pLevel) continue;
+				if(!!sessionStorage.getItem(worker) && JSON.parse(sessionStorage.getItem(worker)).pLevel <= pLevel) continue;
 				if(((cost) + ns.getScriptRam("/scripts/batching/coordinator.js")) > (ns.getServerMaxRam(worker) - ns.getServerUsedRam(worker))) continue;
 				if((ns.getServerMaxRam(worker) - ns.getServerUsedRam(worker)) > minRam) continue;
 				minRam = (ns.getServerMaxRam(worker) - ns.getServerUsedRam(worker));
 				pick = worker;
 				await ns.sleep(50);
 			}
-			console.log("ok");
 			if(!pick) continue;
 			sessionStorage.setItem(pick,JSON.stringify(rankedServer));
 		}
