@@ -38,8 +38,7 @@ These are the self-imposed rules that I refer to when creating new scripts for m
 - [x] Automated backdooring
 - [ ] Automated programming
 - [x] Eat some noodles
-- [x] Click on some illegal stuff
-- [ ] Figure out the other exploits
+- [x] Find all SF-1 exploits
 - [ ] Implement [BB-Vue](https://github.com/smolgumball/bb-vue)
 
 # Known Issues:
